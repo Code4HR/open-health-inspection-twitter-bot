@@ -1,6 +1,6 @@
 var Twit = require('twit');
 var http = require('http');
-var cities = require('libs/cityReference.json');
+var cities = require('./libs/cityReference.json');
 
 var T = new Twit({
 	consumer_key: 'LGQ1D4UMadd5kEgozln4fqDBm',
