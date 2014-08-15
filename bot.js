@@ -7,6 +7,8 @@ var _ = require('underscore');
 
 var selectedCity = cities[_.random(0, cities.length)];
 
+console.log(selectedCity);
+
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
                 '&lng=' + selectedCity.center.longitude;
