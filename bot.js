@@ -11,7 +11,9 @@ console.log(selectedCity);
 
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
-                '&lng=' + selectedCity.center.longitude;
+                '&lng=' + selectedCity.center.longitude + 
+                '&dist=1500';
+console.log(url);
 
 var T = new Twit({
 	consumer_key: 'LGQ1D4UMadd5kEgozln4fqDBm',
