@@ -1,0 +1,24 @@
+{
+  "name": "open-health-inspection-twitter-bot",
+  "version": "0.0.1",
+  "description": "building a Twitter bot that will pick a city in VA, and then make a call to Open Health API and submit a tweet containing a message about a given restaurant and it's url",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c4hrva/open-health-inspection-twitter-bot.git"
+  },
+  "author": "Blaine Price",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c4hrva/open-health-inspection-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/c4hrva/open-health-inspection-twitter-bot",
+  "dependencies": {
+    "request": "^2.40.0",
+    "twit": "^1.1.18",
+    "underscore": "^1.6.0"
+  }
+}

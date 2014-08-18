@@ -1,5 +1,6 @@
 var Twit = require('twit');
 var http = require('http');
+var request = require('request');
 var cities = require('./libs/cityReference.json');
 var _ = require('underscore');
 
@@ -11,7 +12,7 @@ console.log(selectedCity);
 
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
-                '&lng=' + selectedCity.center.longitude + 
+                '&lng=' + selectedCity.center.longitude +
                 '&dist=1500';
 console.log(url);
 
@@ -23,8 +24,17 @@ var T = new Twit({
 });
 
 
-http.get(url, function(res){
-  console.log('got response', res.statusCode);
-}).on('error', function(e) {
-  console.log('got response: ' + e.message);
+// http.get(url, function(res){
+//   console.log('got response', res.statusCode);
+// }).on('error', function(e) {
+//   console.log('got error: ' + e.message);
+// });
+
+request({
+  url: url,
+  json: false
+}, function (err, res, body) {
+  console.log("error: " + err);
+  console.log("response: " + res.statusCode);
+  console.log("body: " + body);
 });
