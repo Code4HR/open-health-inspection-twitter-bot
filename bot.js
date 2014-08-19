@@ -8,6 +8,7 @@ var selectedCity = cities[_.random(0, cities.length)];
 
 var restaurants;
 var selectedRestaurant;
+var message;
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
                 '&lng=' + selectedCity.center.longitude +
@@ -28,14 +29,21 @@ request.get({
     console.log('Error:', err);
   }
   if (res.statusCode == '200') {
+    
     restaurants = _.filter(_.values(body), function(el) {
       return el.category == 'Restaurant';
     });
 
-    selectedRestaurant = (_.random(0, restaurants.length))
-    console.log(selectedRestaurant);
+    selectedRestaurant = restaurants[_.random(0, restaurants.length)];
 
-  
+    message = 'Hey, check out the health inspection reports for ' +
+              selectedRestaurant.name +
+              ' in ' +
+              selectedRestaurant.city + '!\n' +
+              'http://openhealthinspection.com/#' + selectedRestaurant.url;
+
+    console.log(message);
+
   }
 });
 
