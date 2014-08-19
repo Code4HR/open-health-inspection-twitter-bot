@@ -6,6 +6,7 @@ var _ = require('underscore');
 
 var selectedCity = cities[_.random(0, cities.length)];
 
+var restaurants;
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
                 '&lng=' + selectedCity.center.longitude +
@@ -18,13 +19,20 @@ var T = new Twit({
   access_token_secret: 'nlGP1D7hFZ1a1tbw4BYMaiMZdLgQLQBD1DakXWVyEU1Lf'
 });
 
-request.get(url, function (err, res, body) {
+request.get({
+  url: url,
+  json: true,
+  }, function (err, res, body) {
   if (err) {
     console.log('Error:', err);
   }
   if (res.statusCode == '200') {
-    console.log(body);
-  }
+    restaurants = _.filter(_.values(body), function(el) {
+      return el.category == 'Restaurant';
+    });
 
+    console.log(restaurants);
+  
+  }
 });
 
