@@ -15,8 +15,8 @@ var url = api + '?lat=' + selectedCity.center.latitude +
                 '&dist=1500';
 
 var T = new Twit({
-	consumer_key: 'LGQ1D4UMadd5kEgozln4fqDBm',
-  consumer_secret: 'ZfmLkNKTm06LdNcD0wGijkS9akhT0obgeS2PlM1BDajS9rUtOB',
+	consumer_key: 'usMjc1LEL3IYckyUdttr4deCa',
+  consumer_secret: 'HAbM2cBoOHXQ5fczXdTzmsXGCLi4nF4T60vkWJm0QrQpACCKHb',
   access_token: '2663087029-IbzQFeaS3VmSVs0rWmvvRFbgEYyQsbIHpTKemqM',
   access_token_secret: 'nlGP1D7hFZ1a1tbw4BYMaiMZdLgQLQBD1DakXWVyEU1Lf'
 });
@@ -43,6 +43,14 @@ request.get({
               'http://openhealthinspection.com/#' + selectedRestaurant.url;
 
     console.log(message);
+
+    T.post('statuses/update', {status:message}, function(err, response){
+      if (err) {
+        console.log('Error tweeting: ' + err);
+      } else {
+        console.log('Quote Tweeted Tweet ID: ' + tweet.id_str);
+      }
+    });
 
   }
 });
