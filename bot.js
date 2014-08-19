@@ -7,6 +7,7 @@ var _ = require('underscore');
 var selectedCity = cities[_.random(0, cities.length)];
 
 var restaurants;
+var selectedRestaurant;
 var api = 'http://api.openhealthinspection.com/vendors';
 var url = api + '?lat=' + selectedCity.center.latitude +
                 '&lng=' + selectedCity.center.longitude +
@@ -31,7 +32,9 @@ request.get({
       return el.category == 'Restaurant';
     });
 
-    console.log(restaurants);
+    selectedRestaurant = (_.random(0, restaurants.length))
+    console.log(selectedRestaurant);
+
   
   }
 });
