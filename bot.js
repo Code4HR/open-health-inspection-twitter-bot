@@ -2,6 +2,7 @@ var Twit = require('twit');
 var http = require('http');
 var request = require('request');
 var cities = require('./libs/cityReference.json');
+var config = require('./config.json');
 var _ = require('underscore');
 
 var selectedCity = cities[_.random(0, cities.length)];
@@ -14,12 +15,7 @@ var url = api + '?lat=' + selectedCity.center.latitude +
                 '&lng=' + selectedCity.center.longitude +
                 '&dist=1500';
 
-var T = new Twit({
-	consumer_key: 'ybbjpGDn1nFDfpROkIc8dLgI4',
-  consumer_secret: 'UZJAA0Ff2KLAwaW1rstE3dGYD87Q46ScPdlj0UoHAUXpFOo9A2',
-  access_token: '2663087029-O0M0UQNW0TvOq9GnPmf3EUYKuIkXJ7VuSvTCk6K',
-  access_token_secret: 'oT6V1kX4RrrXLtJM9nNKPPKgRp76xtKkqSGfyJGBupWJt'
-});
+var T = new Twit(config);
 
 request.get({
   url: url,
@@ -29,7 +25,7 @@ request.get({
     console.log('Error:', err);
   }
   if (res.statusCode == '200') {
-    
+
     restaurants = _.filter(_.values(body), function(el) {
       return el.category == 'Restaurant';
     });
@@ -54,4 +50,3 @@ request.get({
 
   }
 });
-
