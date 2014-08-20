@@ -15,10 +15,10 @@ var url = api + '?lat=' + selectedCity.center.latitude +
                 '&dist=1500';
 
 var T = new Twit({
-	consumer_key: 'usMjc1LEL3IYckyUdttr4deCa',
-  consumer_secret: 'HAbM2cBoOHXQ5fczXdTzmsXGCLi4nF4T60vkWJm0QrQpACCKHb',
-  access_token: '2663087029-IbzQFeaS3VmSVs0rWmvvRFbgEYyQsbIHpTKemqM',
-  access_token_secret: 'nlGP1D7hFZ1a1tbw4BYMaiMZdLgQLQBD1DakXWVyEU1Lf'
+	consumer_key: 'ybbjpGDn1nFDfpROkIc8dLgI4',
+  consumer_secret: 'UZJAA0Ff2KLAwaW1rstE3dGYD87Q46ScPdlj0UoHAUXpFOo9A2',
+  access_token: '2663087029-O0M0UQNW0TvOq9GnPmf3EUYKuIkXJ7VuSvTCk6K',
+  access_token_secret: 'oT6V1kX4RrrXLtJM9nNKPPKgRp76xtKkqSGfyJGBupWJt'
 });
 
 request.get({
