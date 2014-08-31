@@ -33,34 +33,38 @@ var url = api + '?lat=' + selectedCity.primary_latitude +
 
 var T = new Twit(config);
 
-request.get({
-  url: url,
-  json: true,
-  }, function (err, res, body) {
-  if (err) {
-    console.log('Error:', err);
-  }
-  if (res.statusCode == '200') {
-    restaurants = _.filter(_.values(body), function(el) {
-      return el.category == 'Restaurant';
-    });
+function TweetEvery(){
+  request.get({
+    url: url,
+    json: true,
+    }, function (err, res, body) {
+    if (err) {
+      console.log('Error:', err);
+    }
+    if (res.statusCode == '200') {
+      restaurants = _.filter(_.values(body), function(el) {
+        return el.category == 'Restaurant';
+      });
 
-    selectedRestaurant = restaurants[_.random(0, restaurants.length)];
+      selectedRestaurant = restaurants[_.random(0, restaurants.length)];
 
-    message = 'Hey, check out the health inspection reports for ' +
-              selectedRestaurant.name +
-              ' in ' +
-              selectedRestaurant.city + '!\n' +
-              'http://openhealthinspection.com/#' + selectedRestaurant.url;
+      message = 'Hey, check out the health inspection reports for ' +
+                selectedRestaurant.name +
+                ' in ' +
+                selectedRestaurant.city + '!\n' +
+                'http://openhealthinspection.com/#' + selectedRestaurant.url;
 
-    console.log(message);
+      console.log(message);
 
-    T.post('statuses/update', {status:message}, function(err, response){
-      if (err) {
-        console.log('Error tweeting: ' + err);
-      } else {
-        console.log('Quote Tweeted Tweet ID: ' + response.id_str);
-      }
-    });
-  }
-});
+      T.post('statuses/update', {status:message}, function(err, response){
+        if (err) {
+          console.log('Error tweeting: ' + err);
+        } else {
+          console.log('Quote Tweeted Tweet ID: ' + response.id_str);
+        }
+      });
+    }
+  });
+}
+//Tweet Every 30 minutes  = 1000ms * 30mins * 1000seconds * 60000
+setInterval(TweetEvery, 1800000);
