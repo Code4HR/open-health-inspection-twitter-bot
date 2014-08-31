@@ -17,7 +17,7 @@
 var Twit = require('twit');
 var http = require('http');
 var request = require('request');
-var cities = require('./libs/cityReference.json');
+var cities = require('./libs/vaPopCities.json');
 var config = require('./config.json');
 var _ = require('underscore');
 
@@ -27,8 +27,8 @@ var restaurants;
 var selectedRestaurant;
 var message;
 var api = 'http://api.openhealthinspection.com/vendors';
-var url = api + '?lat=' + selectedCity.center.latitude +
-                '&lng=' + selectedCity.center.longitude +
+var url = api + '?lat=' + selectedCity.primary_latitude +
+                '&lng=' + selectedCity.primary_longitude +
                 '&dist=1500';
 
 var T = new Twit(config);
@@ -41,7 +41,6 @@ request.get({
     console.log('Error:', err);
   }
   if (res.statusCode == '200') {
-
     restaurants = _.filter(_.values(body), function(el) {
       return el.category == 'Restaurant';
     });
@@ -60,9 +59,8 @@ request.get({
       if (err) {
         console.log('Error tweeting: ' + err);
       } else {
-        console.log('Quote Tweeted Tweet ID: ' + tweet.id_str);
+        console.log('Quote Tweeted Tweet ID: ' + response.id_str);
       }
     });
-
   }
 });
