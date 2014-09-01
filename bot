@@ -1,3 +1,4 @@
+#! /app/bin/node
 /*
    Copyright 2014 Code for Hampton Roads contributors.
 
@@ -18,7 +19,6 @@ var Twit = require('twit');
 var http = require('http');
 var request = require('request');
 var cities = require('./libs/vaPopCities.json');
-var config = require('./config.json');
 var _ = require('underscore');
 
 var selectedCity = cities[_.random(0, cities.length)];
@@ -31,9 +31,18 @@ var url = api + '?lat=' + selectedCity.primary_latitude +
                 '&lng=' + selectedCity.primary_longitude +
                 '&dist=1500';
 
+var config = {
+    "consumer_key": process.env.consumer_key,
+    "consumer_secret": process.env.consumer_secret,
+    "access_token": process.env.access_token,
+    "access_token_secret": process.env.access_token_secret
+};
+console.log(config);
+
 var T = new Twit(config);
 
-function TweetEvery(){
+
+function Tweet(){
   request.get({
     url: url,
     json: true,
@@ -66,5 +75,4 @@ function TweetEvery(){
     }
   });
 }
-//Tweet Every 30 minutes  = 1000ms * 30mins * 1000seconds * 60000
-setInterval(TweetEvery, 1800000);
+Tweet();
