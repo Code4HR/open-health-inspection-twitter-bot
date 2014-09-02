@@ -1,4 +1,3 @@
-# Logs
 logs
 *.log
 
@@ -29,3 +28,4 @@ node_modules
 
 #for config
 config.json
+.env
