@@ -28,4 +28,4 @@ cities.forEach(function(city){
   }
 });
 
-console.log(JSON.stringify(newCities));
+console.log(JSON.stringify(newCities, null, 2));
