@@ -1,0 +1,576 @@
+[
+  {
+    "name": "Ashland",
+    "center": {
+      "latitude": 37.75,
+      "longitude": -77.47
+    }
+  },
+  {
+    "name": "Berryville",
+    "center": {
+      "latitude": 39.15,
+      "longitude": -77.98
+    }
+  },
+  {
+    "name": "Big Stone Gap",
+    "center": {
+      "latitude": 36.88,
+      "longitude": -82.74
+    }
+  },
+  {
+    "name": "Blacksburg",
+    "center": {
+      "latitude": 37.22,
+      "longitude": -80.41
+    }
+  },
+  {
+    "name": "Bowling Green",
+    "center": {
+      "latitude": 38.04,
+      "longitude": -77.34
+    }
+  },
+  {
+    "name": "Bridgewater",
+    "center": {
+      "latitude": 38.38,
+      "longitude": -78.97
+    }
+  },
+  {
+    "name": "Bristol",
+    "center": {
+      "latitude": 36.59,
+      "longitude": -82.18
+    }
+  },
+  {
+    "name": "Broadway",
+    "center": {
+      "latitude": 38.61,
+      "longitude": -78.79
+    }
+  },
+  {
+    "name": "Buena Vista",
+    "center": {
+      "latitude": 37.73,
+      "longitude": -79.35
+    }
+  },
+  {
+    "name": "Cape Charles",
+    "center": {
+      "latitude": 37.26,
+      "longitude": -76.01
+    }
+  },
+  {
+    "name": "Charlottesville",
+    "center": {
+      "latitude": 38.02,
+      "longitude": -78.47
+    }
+  },
+  {
+    "name": "Chesapeake",
+    "center": {
+      "latitude": 36.81,
+      "longitude": -76.27
+    }
+  },
+  {
+    "name": "Chincoteague",
+    "center": {
+      "latitude": 37.93,
+      "longitude": -75.37
+    }
+  },
+  {
+    "name": "Christiansburg",
+    "center": {
+      "latitude": 37.12,
+      "longitude": -80.4
+    }
+  },
+  {
+    "name": "Clifton Forge",
+    "center": {
+      "latitude": 37.81,
+      "longitude": -79.82
+    }
+  },
+  {
+    "name": "Colonial Heights",
+    "center": {
+      "latitude": 37.24,
+      "longitude": -77.41
+    }
+  },
+  {
+    "name": "Covington",
+    "center": {
+      "latitude": 37.79,
+      "longitude": -79.99
+    }
+  },
+  {
+    "name": "Culpeper",
+    "center": {
+      "latitude": 38.47,
+      "longitude": -77.99
+    }
+  },
+  {
+    "name": "Damascus",
+    "center": {
+      "latitude": 36.63,
+      "longitude": -81.78
+    }
+  },
+  {
+    "name": "Danville",
+    "center": {
+      "latitude": 36.58,
+      "longitude": -79.39
+    }
+  },
+  {
+    "name": "Dayton",
+    "center": {
+      "latitude": 38.41,
+      "longitude": -78.93
+    }
+  },
+  {
+    "name": "Dublin",
+    "center": {
+      "latitude": 37.1,
+      "longitude": -80.68
+    }
+  },
+  {
+    "name": "Emporia",
+    "center": {
+      "latitude": 36.68,
+      "longitude": -77.54
+    }
+  },
+  {
+    "name": "Fairfax",
+    "center": {
+      "latitude": 38.84,
+      "longitude": -77.3
+    }
+  },
+  {
+    "name": "Falls Church",
+    "center": {
+      "latitude": 38.88,
+      "longitude": -77.17
+    }
+  },
+  {
+    "name": "Farmville",
+    "center": {
+      "latitude": 37.3,
+      "longitude": -78.39
+    }
+  },
+  {
+    "name": "Fredericksburg",
+    "center": {
+      "latitude": 38.3,
+      "longitude": -77.46
+    }
+  },
+  {
+    "name": "Grottoes",
+    "center": {
+      "latitude": 38.26,
+      "longitude": -78.82
+    }
+  },
+  {
+    "name": "Hampton",
+    "center": {
+      "latitude": 37.02,
+      "longitude": -76.34
+    }
+  },
+  {
+    "name": "Harrisonburg",
+    "center": {
+      "latitude": 38.44,
+      "longitude": -78.86
+    }
+  },
+  {
+    "name": "Herndon",
+    "center": {
+      "latitude": 38.96,
+      "longitude": -77.38
+    }
+  },
+  {
+    "name": "Hopewell",
+    "center": {
+      "latitude": 37.3,
+      "longitude": -77.28
+    }
+  },
+  {
+    "name": "La Crosse",
+    "center": {
+      "latitude": 36.7,
+      "longitude": -78.09
+    }
+  },
+  {
+    "name": "Leesburg",
+    "center": {
+      "latitude": 39.11,
+      "longitude": -77.56
+    }
+  },
+  {
+    "name": "Lexington",
+    "center": {
+      "latitude": 37.78,
+      "longitude": -79.44
+    }
+  },
+  {
+    "name": "Louisa",
+    "center": {
+      "latitude": 38.02,
+      "longitude": -78
+    }
+  },
+  {
+    "name": "Luray",
+    "center": {
+      "latitude": 38.66,
+      "longitude": -78.45
+    }
+  },
+  {
+    "name": "Lynchburg",
+    "center": {
+      "latitude": 37.41,
+      "longitude": -79.14
+    }
+  },
+  {
+    "name": "Manassas",
+    "center": {
+      "latitude": 38.75,
+      "longitude": -77.47
+    }
+  },
+  {
+    "name": "Manassas Park",
+    "center": {
+      "latitude": 38.78,
+      "longitude": -77.46
+    }
+  },
+  {
+    "name": "Marion",
+    "center": {
+      "latitude": 36.83,
+      "longitude": -81.51
+    }
+  },
+  {
+    "name": "Martinsville",
+    "center": {
+      "latitude": 36.69,
+      "longitude": -79.87
+    }
+  },
+  {
+    "name": "Middleburg",
+    "center": {
+      "latitude": 38.96,
+      "longitude": -77.73
+    }
+  },
+  {
+    "name": "Mount Jackson",
+    "center": {
+      "latitude": 38.74,
+      "longitude": -78.64
+    }
+  },
+  {
+    "name": "New Market",
+    "center": {
+      "latitude": 38.64,
+      "longitude": -78.67
+    }
+  },
+  {
+    "name": "Newport News",
+    "center": {
+      "latitude": 36.97,
+      "longitude": -76.42
+    }
+  },
+  {
+    "name": "Norfolk",
+    "center": {
+      "latitude": 36.84,
+      "longitude": -76.28
+    }
+  },
+  {
+    "name": "Norton",
+    "center": {
+      "latitude": 36.93,
+      "longitude": -82.62
+    }
+  },
+  {
+    "name": "Orange",
+    "center": {
+      "latitude": 38.24,
+      "longitude": -78.11
+    }
+  },
+  {
+    "name": "Pearisburg",
+    "center": {
+      "latitude": 37.32,
+      "longitude": -80.73
+    }
+  },
+  {
+    "name": "Petersburg",
+    "center": {
+      "latitude": 37.22,
+      "longitude": -77.4
+    }
+  },
+  {
+    "name": "Poquoson",
+    "center": {
+      "latitude": 37.12,
+      "longitude": -76.34
+    }
+  },
+  {
+    "name": "Portsmouth",
+    "center": {
+      "latitude": 36.83,
+      "longitude": -76.29
+    }
+  },
+  {
+    "name": "Pulaski",
+    "center": {
+      "latitude": 37.04,
+      "longitude": -80.77
+    }
+  },
+  {
+    "name": "Purcellville",
+    "center": {
+      "latitude": 39.13,
+      "longitude": -77.71
+    }
+  },
+  {
+    "name": "Radford",
+    "center": {
+      "latitude": 37.13,
+      "longitude": -80.57
+    }
+  },
+  {
+    "name": "Richmond",
+    "center": {
+      "latitude": 37.55,
+      "longitude": -77.46
+    }
+  },
+  {
+    "name": "Roanoke",
+    "center": {
+      "latitude": 37.27,
+      "longitude": -79.94
+    }
+  },
+  {
+    "name": "Rocky Mount",
+    "center": {
+      "latitude": 36.99,
+      "longitude": -79.89
+    }
+  },
+  {
+    "name": "Round Hill",
+    "center": {
+      "latitude": 39.13,
+      "longitude": -77.76
+    }
+  },
+  {
+    "name": "Rural Retreat",
+    "center": {
+      "latitude": 36.89,
+      "longitude": -81.27
+    }
+  },
+  {
+    "name": "Salem",
+    "center": {
+      "latitude": 37.29,
+      "longitude": -80.05
+    }
+  },
+  {
+    "name": "Scottsville",
+    "center": {
+      "latitude": 37.79,
+      "longitude": -78.49
+    }
+  },
+  {
+    "name": "Shenandoah",
+    "center": {
+      "latitude": 38.48,
+      "longitude": -78.62
+    }
+  },
+  {
+    "name": "Smithfield",
+    "center": {
+      "latitude": 36.98,
+      "longitude": -76.63
+    }
+  },
+  {
+    "name": "South Boston",
+    "center": {
+      "latitude": 36.69,
+      "longitude": -78.9
+    }
+  },
+  {
+    "name": "South Hill",
+    "center": {
+      "latitude": 36.72,
+      "longitude": -78.12
+    }
+  },
+  {
+    "name": "Staunton",
+    "center": {
+      "latitude": 38.14,
+      "longitude": -79.07
+    }
+  },
+  {
+    "name": "Suffolk",
+    "center": {
+      "latitude": 36.72,
+      "longitude": -76.58
+    }
+  },
+  {
+    "name": "Tazewell",
+    "center": {
+      "latitude": 37.11,
+      "longitude": -81.51
+    }
+  },
+  {
+    "name": "Vienna",
+    "center": {
+      "latitude": 38.9,
+      "longitude": -77.26
+    }
+  },
+  {
+    "name": "Vinton",
+    "center": {
+      "latitude": 37.28,
+      "longitude": -79.89
+    }
+  },
+  {
+    "name": "Virginia Beach",
+    "center": {
+      "latitude": 36.85,
+      "longitude": -75.97
+    }
+  },
+  {
+    "name": "Warrenton",
+    "center": {
+      "latitude": 38.71,
+      "longitude": -77.79
+    }
+  },
+  {
+    "name": "Waynesboro",
+    "center": {
+      "latitude": 38.06,
+      "longitude": -78.88
+    }
+  },
+  {
+    "name": "West Point",
+    "center": {
+      "latitude": 37.53,
+      "longitude": -76.79
+    }
+  },
+  {
+    "name": "Winchester",
+    "center": {
+      "latitude": 39.18,
+      "longitude": -78.16
+    }
+  },
+  {
+    "name": "Wytheville",
+    "center": {
+      "latitude": 36.94,
+      "longitude": -81.08
+    }
+  },
+  {
+    "name": "Abingdon",
+    "center": {
+      "latitude": 36.7,
+      "longitude": -81.97
+    }
+  },
+  {
+    "name": "Alexandria",
+    "center": {
+      "latitude": 38.8,
+      "longitude": -77.04
+    }
+  },
+  {
+    "name": "Norton",
+    "center": {
+      "latitude": 36.93,
+      "longitude": -82.62
+    }
+  },
+  {
+    "name": "Scottsville",
+    "center": {
+      "latitude": 37.79,
+      "longitude": -78.49
+    }
+  }
+]

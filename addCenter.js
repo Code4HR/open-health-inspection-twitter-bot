@@ -12,9 +12,9 @@
 
 var cities = require('./libs/va.json');
 
-var newCities = new Array();
+var newCities = []
 
-cities.forEach(function(city){
+/*cities.forEach(function(city){
   if(city.county_name) {
     var temp = {
       name: city.name,
@@ -27,5 +27,19 @@ cities.forEach(function(city){
     newCities.push(temp);
   }
 });
+*/
+newCities = cities.reduce(function(all, city) { 
+    if(city.county_name) { 
+      var temp = {
+        name: city.name,
+        center: {
+          latitude: parseFloat(city.primary_latitude),
+          longitude: parseFloat(city.primary_longitude)
+        }
+      };
+      all.push(temp);
+    }
+    return all;
+},[])
 
 console.log(JSON.stringify(newCities, null, 2));
